@@ -8,7 +8,8 @@ logging.basicConfig(filename="bot.log", level=logging.INFO)
 
 def greet_user(update, context):
     print("Вызван /start")
-    update.message.reply_text("Привет💫")
+     my_keyboard = ReplyKeyboardMarkup([['/taro']])
+    update.message.reply_text(f"Привет💫" , reply_markup=my_keyboard)
 
 def send_taro_picture(update, context):
     taro_photo_list = glob('images/taro*.jp*g')
