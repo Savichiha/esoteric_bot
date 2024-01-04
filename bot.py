@@ -8,7 +8,7 @@ logging.basicConfig(filename="bot.log", level=logging.INFO)
 
 def greet_user(update, context):
     print("Вызван /start")
-     my_keyboard = ReplyKeyboardMarkup([['/taro']])
+    my_keyboard = ReplyKeyboardMarkup([['/taro']])
     update.message.reply_text(f"Привет💫" , reply_markup=my_keyboard)
 
 def send_taro_picture(update, context):
